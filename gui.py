@@ -296,17 +296,23 @@ class PlayerGUI(QMainWindow):
             return
 
         if self.mode_episode:
-            # mappa completa episodio su tutti gli shot
+            # filtra gli shot in base al reparto corrente
+            selected_shots = [
+                s for s in self.loaded_shots if s.reparto == self.current_reparto
+            ]
+            # mappa completa episodio solo sugli shot filtrati
             self.episode_frame_map = []
-            for s in self.loaded_shots:
+            for s in selected_shots:
                 self.episode_frame_map.extend(range(s.start_frame, s.end_frame + 1))
             self.total_episode_frames = len(self.episode_frame_map)
         else:
             if not self.current_shot:
                 print("[⚠️] Nessuno shot selezionato.")
                 return
-            selected_shot = [self.current_shot]
-            self.episode_frame_map = list(range(self.current_shot.start_frame, self.current_shot.end_frame + 1))
+            selected_shots = [self.current_shot]
+            self.episode_frame_map = list(
+                range(self.current_shot.start_frame, self.current_shot.end_frame + 1)
+            )
             self.total_episode_frames = len(self.episode_frame_map)
 
 
@@ -338,7 +344,7 @@ class PlayerGUI(QMainWindow):
 
                 while self.is_playing:
                     play_with_cache(
-                        self.loaded_shots,   # <— tutta la sequenza
+                        selected_shots,   # <— solo shot del reparto corrente
                         self.video_frame,
                         audio,
                         fps=fps_value,
