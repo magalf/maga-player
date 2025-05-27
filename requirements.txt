@@ -1,0 +1,6 @@
+PyQt5>=5.15
+pygame>=2.1
+opencv-python>=4.5
+colorlog>=6.7
+pytest>=7.0
+pytest-qt>=4.0
