@@ -3,7 +3,7 @@
 Logging centralizzato per il Maga Player.
 • Livelli      : TRACE < DEBUG < INFO < WARNING < ERROR < CRITICAL
 • Formato base : 12:34:56.789  [THREAD]  [TAG]  messaggio  key=value ...
-• Colorazione  : via colorlog (pip install colorlog) – fallback in B/W se non disponibile
+• Colorazione  : via colorlog (pip install colorlog) – fallback in B/W se non disponibile
 • Integrazione : importa sempre `from debug_utils import dbg, trace, log_exception`
                  e rimpiazza i print manuali con dbg("TAG", "msg", k=v)
 • Override print: tutte le print() legacy diventano DEBUG.
