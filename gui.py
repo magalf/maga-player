@@ -487,7 +487,11 @@ class PlayerGUI(QMainWindow):
         # se stiamo passando a SCENA deduci lo shot corrente dal frame globale
         if not self.mode_episode:
             for sh in self.loaded_shots:
-                if sh.absolute_start <= self.resume_frame_index <= sh.absolute_start + (sh.end_frame - sh.start_frame):
+                if sh.reparto != self.current_reparto:
+                    continue
+                if sh.absolute_start <= self.resume_frame_index <= (
+                    sh.absolute_start + (sh.end_frame - sh.start_frame)
+                ):
                     self.current_shot = sh
                     break
         # [PATCH] sincronizza indice frame quando si cambia modalità
