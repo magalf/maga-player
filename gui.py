@@ -1,8 +1,6 @@
 # ⚠️ IMPORT NECESSARI
-import sys
 import time
 import threading
-import random
 import queue
 import pygame
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QLabel, QListWidget,
@@ -330,7 +328,6 @@ class PlayerGUI(QMainWindow):
             self.fps_label.setText(f"FPS: {fps_ist:.2f}")
             self.timeline_slider.setValue(int((current_frame / total_frames) * 100))
 
-        audio_start = max((self.resume_frame_index - 1) / fps_value, 0)
 
         def playback_loop():
             try:
@@ -478,7 +475,6 @@ class PlayerGUI(QMainWindow):
             print("[Pausa] Playback in pausa")
 
     def toggle_episode_mode(self):
-        was_playing = self.is_playing
         # non fermiamo più il thread: continuerà con trim/seek
         self.mode_episode = not self.mode_episode
         # se stiamo passando a SCENA deduci lo shot corrente dal frame globale
@@ -522,10 +518,6 @@ class PlayerGUI(QMainWindow):
                 shot_len = abs_e - abs_s + 1
                 self.timeline_slider.setMaximum(shot_len)
                 self.frame_counter.setText(f"Frame: {self.resume_frame_index:04d} / {shot_len:04d}")
-                abs_s = self.current_shot.absolute_start
-                abs_e = abs_s + (self.current_shot.end_frame - self.current_shot.start_frame)
-                self.command_q.put(("trim", (abs_s, abs_e)))
-                self.command_q.put(("seek", abs_s + self.resume_frame_index))
 
         if self.mode_episode:
             self.mode_toggle_btn.setText("Episodio")
