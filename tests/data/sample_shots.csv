@@ -1,0 +1,4 @@
+shot_id,reparto,frame_path,start_frame,end_frame
+s1,animazione,path/shot1/frame####.png,1,3
+audio,,path/audio.wav,,
+s2,animazione,path/shot2/frame####.png,1,2
