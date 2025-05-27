@@ -441,6 +441,7 @@ class PlayerGUI(QMainWindow):
             mode="Ep" if self.mode_episode else "Sc",
             playing=self.is_playing)
         self.should_pause = False
+        self.should_stop = True
         self.is_playing = False
 
         # join sicuro – solo se siamo nel thread GUI
