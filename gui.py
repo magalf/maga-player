@@ -320,10 +320,18 @@ class PlayerGUI(QMainWindow):
         cache_value = self.cache_spinner.value()
         # [PATCH] calcola offset audio corretto
         if self.mode_episode:
-            audio_offset_frames = self.resume_frame_index
+            start_index = self.resume_frame_index
+            # Clamp to valid range for safety
+            if self.total_episode_frames:
+                start_index = max(0, min(start_index,
+                                       self.total_episode_frames - 1))
+            audio_offset_frames = start_index
         else:
+            shot_len = (self.current_shot.end_frame -
+                        self.current_shot.start_frame + 1)
+            start_index = max(0, min(self.resume_frame_index, shot_len - 1))
             audio_offset_frames = (self.current_shot.absolute_start +
-                                   self.resume_frame_index)
+                                   start_index)
         print(f"[AUDIO] offset_frames = {audio_offset_frames}")
 
         audio = self.audio_path  # audio sempre attivo
@@ -352,12 +360,7 @@ class PlayerGUI(QMainWindow):
                         on_frame=update_gui_live,
                         stop_flag=lambda: self.should_stop,
                         pause_flag=lambda: self.should_pause,
-                        # start_index va sempre in coordinate *assolute*
-                        start_index=(
-                        self.resume_frame_index
-                        if self.mode_episode
-                        else self.current_shot.absolute_start + self.resume_frame_index
-                    ),
+                        start_index=start_index,
                         audio_offset_frames=audio_offset_frames,
                         command_q=self.command_q       # <── PASSAGGIO CODA
                     )
@@ -381,11 +384,11 @@ class PlayerGUI(QMainWindow):
         if self.mode_episode:
             self.command_q.put(("trim_off", None))
         else:
-            abs_start = self.current_shot.absolute_start
-            abs_end   = abs_start + (self.current_shot.end_frame - self.current_shot.start_frame)
-            self.command_q.put(("trim", (abs_start, abs_end)))
+            shot_len = (self.current_shot.end_frame -
+                        self.current_shot.start_frame + 1)
+            self.command_q.put(("trim", (0, shot_len - 1)))
             # assicura che parta dal frame locale corretto
-            self.command_q.put(("seek", abs_start + self.resume_frame_index))
+            self.command_q.put(("seek", start_index))
 
         dbg("THREAD", "New", start=self.resume_frame_index,
             prev_alive=self.play_thread.is_alive() if getattr(self, "play_thread", None) else False)
