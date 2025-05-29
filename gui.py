@@ -284,8 +284,17 @@ class PlayerGUI(QMainWindow):
             resume_frame=self.resume_frame_index)
         print(f"[▶ handle_play] resume_frame_index: {self.resume_frame_index}")
         # [PATCH-SEEK] coda comandi (una sola istanza)
+        queue_cleared = False
         if not hasattr(self, "command_q"):
             self.command_q = queue.Queue()
+            queue_cleared = True
+        elif not self.command_q.empty():
+            while not self.command_q.empty():
+                try:
+                    self.command_q.get_nowait()
+                except queue.Empty:
+                    break
+            queue_cleared = True
         if self.is_playing:
             print("[INFO] Riproduzione già in corso.")
             self.should_pause = False
@@ -327,6 +336,28 @@ class PlayerGUI(QMainWindow):
         print(f"[AUDIO] offset_frames = {audio_offset_frames}")
 
         audio = self.audio_path  # audio sempre attivo
+
+        final_start_index = (
+            self.resume_frame_index
+            if self.mode_episode
+            else self.current_shot.absolute_start + self.resume_frame_index
+        )
+        if self.mode_episode:
+            trim_range = None
+        else:
+            trim_range = (
+                self.current_shot.absolute_start,
+                self.current_shot.absolute_start
+                + (self.current_shot.end_frame - self.current_shot.start_frame)
+            )
+
+        dbg(
+            "PLAY",
+            "setup",
+            start_index=final_start_index,
+            trim=trim_range if trim_range is not None else "OFF",
+            queue_cleared=queue_cleared,
+        )
 
         def update_gui_live(current_frame, total_frames, fps_ist):
             self.resume_frame_index = current_frame
@@ -387,8 +418,14 @@ class PlayerGUI(QMainWindow):
             # assicura che parta dal frame locale corretto
             self.command_q.put(("seek", abs_start + self.resume_frame_index))
 
-        dbg("THREAD", "New", start=self.resume_frame_index,
-            prev_alive=self.play_thread.is_alive() if getattr(self, "play_thread", None) else False)
+        dbg(
+            "THREAD",
+            "New",
+            start_index=final_start_index,
+            trim=trim_range if trim_range is not None else "OFF",
+            queue_cleared=queue_cleared,
+            prev_alive=self.play_thread.is_alive() if getattr(self, "play_thread", None) else False,
+        )
         self.play_thread = threading.Thread(target=playback_loop, daemon=True)
         self.play_thread.start()
 
