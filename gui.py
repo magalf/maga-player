@@ -377,6 +377,14 @@ class PlayerGUI(QMainWindow):
             self.play_thread.join(timeout=1.0)
         self.should_stop = False
 
+        if hasattr(self, "command_q"):
+            while not self.command_q.empty():
+                try:
+                    self.command_q.get_nowait()
+                except queue.Empty:
+                    break
+            dbg("GUI", "command queue cleared")
+
         # ——[PATCH-TRIM] imposta il range sin dall'avvio ——
         if self.mode_episode:
             self.command_q.put(("trim_off", None))
@@ -475,6 +483,14 @@ class PlayerGUI(QMainWindow):
             self.timeline_slider.setValue(0)
             if self.total_episode_frames:
                 self.frame_counter.setText(f"Frame: 0000 / {self.total_episode_frames:04d}")
+
+        if hasattr(self, "command_q"):
+            while not self.command_q.empty():
+                try:
+                    self.command_q.get_nowait()
+                except queue.Empty:
+                    break
+            dbg("GUI", "command queue cleared")
 
     def handle_pause(self):
         if self.is_playing:
