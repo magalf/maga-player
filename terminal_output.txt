@@ -278,3 +278,459 @@ pygame.error: Position not implemented for music type
 13:16:41 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=878 playing=True mode=Ep
 13:16:41 [MainThread] [DEBUG] [GUI] enqueue seek target=878
 13:16:43 [MainThread] [DEBUG] [STOP] invocato thread=MainThread mode=Ep playing=True
+
+pygame 2.6.0 (SDL 2.28.4, Python 3.12.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[📂] CSV selezionato: M:/Belen_PROJ/Belen_COMP-EDIT/Compositing/shot_list_belen_ep000_fixed.csv
+11:32:53 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:32:53 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:32:53 [Thread-1 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:32:53 [Thread-1 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:32:54 [Thread-1 (playback_loop)] [DEBUG] [CORE] trim OFF
+11:32:57 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0020 frame_abs=85 playing=True mode=Ep
+11:32:57 [MainThread] [DEBUG] [GUI] enqueue seek target=85
+11:32:57 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:00 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=True mode=Ep
+11:33:00 [MainThread] [DEBUG] [GUI] enqueue seek target=280
+11:33:00 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:33:01 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0020 frame_abs=85 playing=True mode=Ep
+11:33:01 [MainThread] [DEBUG] [GUI] enqueue seek target=85
+11:33:01 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=85
+[Pausa] Playback in pausa
+11:33:07 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=174
+[▶ handle_play] resume_frame_index: 174
+[INFO] Riproduzione già in corso.
+11:33:09 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=True mode=Ep
+11:33:09 [MainThread] [DEBUG] [GUI] enqueue seek target=280
+11:33:09 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:33:10 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=209 playing=True mode=Ep
+11:33:10 [MainThread] [DEBUG] [GUI] enqueue seek target=209
+11:33:10 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:12 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=True mode=Ep
+11:33:12 [MainThread] [DEBUG] [GUI] enqueue seek target=0
+11:33:12 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=247
+11:33:13 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0020 frame_abs=85 playing=True mode=Ep
+11:33:13 [MainThread] [DEBUG] [GUI] enqueue seek target=85
+11:33:13 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:14 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0020 frame_abs=85 playing=True mode=Ep
+11:33:14 [MainThread] [DEBUG] [GUI] enqueue seek target=85
+11:33:14 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:14 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=True mode=Ep
+11:33:14 [MainThread] [DEBUG] [GUI] enqueue seek target=0
+11:33:14 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=0
+11:33:16 [MainThread] [DEBUG] [MODE] toggle to=Scena resume_frame=51
+[Modalità] Riproduzione isolata dello shot
+11:33:17 [Thread-1 (playback_loop)] [DEBUG] [CORE] trim ON start=0 end=84
+11:33:17 [Thread-1 (playback_loop)] [DEBUG] [CORE] seek request target=51
+11:33:18 [Thread-1 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+
+[PERFORMANCE] FPS medio episodio: 24.93 (target: 25)
+11:33:18 [Thread-1 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:33:20 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=85
+[▶ handle_play] resume_frame_index: 85
+[AUDIO] offset_frames = 85
+11:33:20 [MainThread] [DEBUG] [THREAD] New start=85 prev_alive=False
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:20 [Thread-14 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=85 max_index=84
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [CORE] trim ON start=0 end=84
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+11:33:20 [Thread-14 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:33:21 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=85
+[▶ handle_play] resume_frame_index: 85
+[AUDIO] offset_frames = 85
+11:33:21 [MainThread] [DEBUG] [THREAD] New start=85 prev_alive=False
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:21 [Thread-18 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=85 max_index=84
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [CORE] trim ON start=0 end=84
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+11:33:21 [Thread-18 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:33:23 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=False mode=Sc
+11:33:23 [MainThread] [DEBUG] [GUI] trim+seek scena start=0 end=84
+11:33:24 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:33:24 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:24 [Thread-22 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:24 [Thread-22 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:33:24 [Thread-22 (playback_loop)] [DEBUG] [CORE] trim ON start=0 end=84
+11:33:24 [Thread-22 (playback_loop)] [DEBUG] [CORE] seek request target=0
+11:33:24 [Thread-22 (playback_loop)] [DEBUG] [CORE] trim ON start=0 end=84
+11:33:24 [Thread-22 (playback_loop)] [DEBUG] [CORE] seek request target=0
+11:33:28 [Thread-22 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+
+[PERFORMANCE] FPS medio episodio: 25.09 (target: 25)
+11:33:28 [Thread-22 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:33:30 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0020 frame_abs=85 playing=False mode=Sc
+11:33:30 [MainThread] [DEBUG] [GUI] trim+seek scena start=85 end=208
+11:33:32 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 85
+11:33:32 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:32 [Thread-28 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:32 [Thread-28 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:33:32 [Thread-28 (playback_loop)] [DEBUG] [CORE] trim ON start=85 end=208
+11:33:32 [Thread-28 (playback_loop)] [DEBUG] [CORE] seek request target=85
+11:33:32 [Thread-28 (playback_loop)] [DEBUG] [CORE] trim ON start=85 end=208
+11:33:32 [Thread-28 (playback_loop)] [DEBUG] [CORE] seek request target=85
+
+[PERFORMANCE] FPS medio episodio: 25.06 (target: 25)
+11:33:34 [Thread-28 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=123
+11:33:37 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=209 playing=False mode=Sc
+11:33:37 [MainThread] [DEBUG] [GUI] trim+seek scena start=209 end=279
+11:33:39 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 209
+11:33:39 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:39 [Thread-34 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:39 [Thread-34 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=209 offset_frames=209 fps=25
+11:33:39 [Thread-34 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=209 max_index=70
+[AUDIO DEBUG] offset_frames: 209, start_sec: 8.36
+11:33:39 [Thread-34 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:39 [Thread-34 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:33:40 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 209
+11:33:40 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:40 [Thread-37 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:40 [Thread-37 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=209 offset_frames=209 fps=25
+11:33:40 [Thread-37 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=209 max_index=70
+[AUDIO DEBUG] offset_frames: 209, start_sec: 8.36
+11:33:40 [Thread-37 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:40 [Thread-37 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=70
+11:33:41 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:33:41 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:33:41 [Thread-40 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:41 [Thread-40 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:33:41 [Thread-40 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:33:41 [Thread-40 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:41 [Thread-40 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:33:43 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=209 playing=False mode=Sc
+11:33:43 [MainThread] [DEBUG] [GUI] trim+seek scena start=209 end=279
+11:33:45 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 209
+11:33:45 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:45 [Thread-43 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:45 [Thread-43 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=209 offset_frames=209 fps=25
+11:33:45 [Thread-43 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=209 max_index=70
+[AUDIO DEBUG] offset_frames: 209, start_sec: 8.36
+11:33:45 [Thread-43 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:45 [Thread-43 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=70
+11:33:46 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:33:46 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:33:46 [Thread-46 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:46 [Thread-46 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:33:46 [Thread-46 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:33:46 [Thread-46 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:46 [Thread-46 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:33:47 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:33:47 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:33:47 [Thread-49 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:47 [Thread-49 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:33:47 [Thread-49 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:33:47 [Thread-49 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:47 [Thread-49 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=70
+11:33:48 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=False mode=Sc
+11:33:48 [MainThread] [DEBUG] [GUI] trim+seek scena start=280 end=502
+11:33:49 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 280
+11:33:49 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:49 [Thread-52 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:49 [Thread-52 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:33:49 [Thread-52 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=222
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:33:49 [Thread-52 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:49 [Thread-52 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:33:49 [Thread-52 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=222
+11:33:51 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=223
+[▶ handle_play] resume_frame_index: 223
+[AUDIO] offset_frames = 503
+11:33:51 [MainThread] [DEBUG] [THREAD] New start=223 prev_alive=False
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:51 [Thread-56 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=503 max_index=222
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] seek request target=280
+
+[PERFORMANCE] FPS medio episodio: 22.22 (target: 25)
+[⚠️ AVVISO] Il player non ha mantenuto il framerate target!
+11:33:51 [Thread-56 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=222
+11:33:52 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=223
+[▶ handle_play] resume_frame_index: 223
+[AUDIO] offset_frames = 503
+11:33:52 [MainThread] [DEBUG] [THREAD] New start=223 prev_alive=False
+11:33:52 [Thread-64 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:52 [Thread-64 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+11:33:52 [Thread-64 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=503 max_index=222
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:33:52 [Thread-64 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:33:52 [Thread-64 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:33:52 [Thread-64 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=222
+11:33:57 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0050 frame_abs=503 playing=False mode=Sc
+11:33:57 [MainThread] [DEBUG] [GUI] trim+seek scena start=503 end=668
+11:33:58 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 503
+11:33:58 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:33:58 [Thread-68 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:33:58 [Thread-68 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+11:33:58 [Thread-68 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=503 max_index=165
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:33:58 [Thread-68 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:33:58 [Thread-68 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=279
+11:34:13 [MainThread] [DEBUG] [MODE] toggle to=Episodio resume_frame=503
+[Modalità] Riproduzione dell'intero episodio
+11:34:15 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=503
+[▶ handle_play] resume_frame_index: 503
+[AUDIO] offset_frames = 503
+11:34:15 [MainThread] [DEBUG] [THREAD] New start=503 prev_alive=False
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:15 [Thread-71 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] seek request target=503
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+
+[PERFORMANCE] FPS medio episodio: 23.52 (target: 25)
+[⚠️ AVVISO] Il player non ha mantenuto il framerate target!
+11:34:15 [Thread-71 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=503
+11:34:16 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=504
+[▶ handle_play] resume_frame_index: 504
+[AUDIO] offset_frames = 504
+11:34:16 [MainThread] [DEBUG] [THREAD] New start=504 prev_alive=False
+11:34:16 [Thread-78 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:16 [Thread-78 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=504 offset_frames=504 fps=25
+[AUDIO DEBUG] offset_frames: 504, start_sec: 20.16
+11:34:16 [Thread-78 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:34:16 [Thread-78 (playback_loop)] [DEBUG] [CORE] seek request target=503
+11:34:16 [Thread-78 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+11:34:16 [Thread-78 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=503
+11:34:18 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=504
+[▶ handle_play] resume_frame_index: 504
+[AUDIO] offset_frames = 504
+11:34:18 [MainThread] [DEBUG] [THREAD] New start=504 prev_alive=False
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:18 [Thread-82 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=504 offset_frames=504 fps=25
+[AUDIO DEBUG] offset_frames: 504, start_sec: 20.16
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim ON start=503 end=668
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=503
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim ON start=503 end=668
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=503
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim OFF
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim OFF
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim OFF
+11:34:18 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim OFF
+11:34:22 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=True mode=Ep
+11:34:22 [MainThread] [DEBUG] [GUI] enqueue seek target=0
+11:34:22 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=0
+[Pausa] Playback in pausa
+11:34:27 [MainThread] [TRACE] [GUI] handle_play mode=Episodio resume_frame=90
+[▶ handle_play] resume_frame_index: 90
+[INFO] Riproduzione già in corso.
+11:34:28 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=True mode=Ep
+11:34:28 [MainThread] [DEBUG] [GUI] enqueue seek target=0
+11:34:28 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=0
+11:34:29 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=True mode=Ep
+11:34:29 [MainThread] [DEBUG] [GUI] enqueue seek target=280
+11:34:29 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:34:30 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=209 playing=True mode=Ep
+11:34:30 [MainThread] [DEBUG] [GUI] enqueue seek target=209
+11:34:30 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=209
+11:34:32 [MainThread] [DEBUG] [MODE] toggle to=Scena resume_frame=42
+[Modalità] Riproduzione isolata dello shot
+11:34:32 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:34:32 [Thread-82 (playback_loop)] [DEBUG] [CORE] seek request target=251
+11:34:33 [Thread-82 (playback_loop)] [DEBUG] [CORE] trim ended, stopping
+
+[PERFORMANCE] FPS medio episodio: 24.97 (target: 25)
+11:34:33 [Thread-82 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=279
+11:34:35 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=280
+[▶ handle_play] resume_frame_index: 280
+[AUDIO] offset_frames = 489
+11:34:35 [MainThread] [DEBUG] [THREAD] New start=280 prev_alive=False
+11:34:35 [Thread-94 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:35 [Thread-94 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=489 offset_frames=489 fps=25
+11:34:35 [Thread-94 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=489 max_index=70
+[AUDIO DEBUG] offset_frames: 489, start_sec: 19.56
+11:34:35 [Thread-94 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:34:35 [Thread-94 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:34:36 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=280
+[▶ handle_play] resume_frame_index: 280
+[AUDIO] offset_frames = 489
+11:34:36 [MainThread] [DEBUG] [THREAD] New start=280 prev_alive=False
+11:34:36 [Thread-97 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:36 [Thread-97 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=489 offset_frames=489 fps=25
+11:34:36 [Thread-97 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=489 max_index=70
+[AUDIO DEBUG] offset_frames: 489, start_sec: 19.56
+11:34:36 [Thread-97 (playback_loop)] [DEBUG] [CORE] seek request target=489
+11:34:36 [Thread-97 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=70
+11:34:38 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:34:38 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:34:38 [Thread-100 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:38 [Thread-100 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:34:38 [Thread-100 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:34:38 [Thread-100 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:34:38 [Thread-100 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:34:45 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:34:45 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:34:45 [Thread-103 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:45 [Thread-103 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:34:45 [Thread-103 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:34:45 [Thread-103 (playback_loop)] [DEBUG] [CORE] seek request target=489
+11:34:45 [Thread-103 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=70
+11:34:48 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=71
+[▶ handle_play] resume_frame_index: 71
+[AUDIO] offset_frames = 280
+11:34:48 [MainThread] [DEBUG] [THREAD] New start=71 prev_alive=False
+11:34:48 [Thread-106 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:48 [Thread-106 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:34:48 [Thread-106 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=70
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:34:48 [Thread-106 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:34:48 [Thread-106 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:34:54 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=False mode=Sc
+11:34:54 [MainThread] [DEBUG] [GUI] trim+seek scena start=280 end=502
+11:34:55 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 280
+11:34:55 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:34:55 [Thread-109 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:55 [Thread-109 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=280 offset_frames=280 fps=25
+11:34:55 [Thread-109 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=280 max_index=222
+[AUDIO DEBUG] offset_frames: 280, start_sec: 11.20
+11:34:55 [Thread-109 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:34:55 [Thread-109 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=222
+11:34:57 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=223
+[▶ handle_play] resume_frame_index: 223
+[AUDIO] offset_frames = 503
+11:34:57 [MainThread] [DEBUG] [THREAD] New start=223 prev_alive=False
+11:34:57 [Thread-112 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:34:57 [Thread-112 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+11:34:57 [Thread-112 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=503 max_index=222
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:34:57 [Thread-112 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:34:57 [Thread-112 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:34:57 [Thread-112 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=222
+11:34:58 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0050 frame_abs=503 playing=False mode=Sc
+11:34:58 [MainThread] [DEBUG] [GUI] trim+seek scena start=503 end=668
+11:35:00 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 503
+11:35:00 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:35:00 [Thread-116 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:00 [Thread-116 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=503 offset_frames=503 fps=25
+11:35:00 [Thread-116 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=503 max_index=165
+[AUDIO DEBUG] offset_frames: 503, start_sec: 20.12
+11:35:00 [Thread-116 (playback_loop)] [DEBUG] [CORE] trim ON start=209 end=279
+11:35:00 [Thread-116 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=208
+11:35:01 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0040 frame_abs=280 playing=False mode=Sc
+11:35:01 [MainThread] [DEBUG] [GUI] trim+seek scena start=280 end=502
+11:35:01 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0030 frame_abs=209 playing=False mode=Sc
+11:35:01 [MainThread] [DEBUG] [GUI] trim+seek scena start=209 end=279
+11:35:02 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=False mode=Sc
+11:35:02 [MainThread] [DEBUG] [GUI] trim+seek scena start=0 end=84
+11:35:03 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:35:03 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:35:03 [Thread-119 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:03 [Thread-119 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:35:03 [Thread-119 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:35:03 [Thread-119 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:35:06 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=85
+[▶ handle_play] resume_frame_index: 85
+[AUDIO] offset_frames = 85
+11:35:06 [MainThread] [DEBUG] [THREAD] New start=85 prev_alive=False
+11:35:06 [Thread-122 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:06 [Thread-122 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+11:35:06 [Thread-122 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=85 max_index=84
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:35:06 [Thread-122 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:35:06 [Thread-122 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=279
+11:35:11 [MainThread] [DEBUG] [STOP] invocato thread=MainThread mode=Sc playing=False
+11:35:12 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:35:12 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:35:12 [Thread-125 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:12 [Thread-125 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:35:12 [Thread-125 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:35:12 [Thread-125 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:35:15 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=85
+[▶ handle_play] resume_frame_index: 85
+[AUDIO] offset_frames = 85
+11:35:15 [MainThread] [DEBUG] [THREAD] New start=85 prev_alive=False
+11:35:15 [Thread-128 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:15 [Thread-128 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+11:35:15 [Thread-128 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=85 max_index=84
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:35:15 [Thread-128 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:35:15 [Thread-128 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=279
+11:35:17 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=85
+[▶ handle_play] resume_frame_index: 85
+[AUDIO] offset_frames = 85
+11:35:17 [MainThread] [DEBUG] [THREAD] New start=85 prev_alive=False
+11:35:17 [Thread-131 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:17 [Thread-131 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=85 offset_frames=85 fps=25
+11:35:17 [Thread-131 (playback_loop)] [DEBUG] [WARN] Start index fuori range start_index=85 max_index=84
+[AUDIO DEBUG] offset_frames: 85, start_sec: 3.40
+11:35:17 [Thread-131 (playback_loop)] [DEBUG] [CORE] seek request target=280
+11:35:17 [Thread-131 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
+11:35:18 [MainThread] [DEBUG] [STOP] invocato thread=MainThread mode=Sc playing=False
+11:35:19 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:35:19 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:35:19 [Thread-134 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:19 [Thread-134 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:35:19 [Thread-134 (playback_loop)] [DEBUG] [CORE] trim ON start=280 end=502
+11:35:19 [Thread-134 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=279
+11:35:21 [MainThread] [DEBUG] [SELECT] click lista shot=SC_0010 frame_abs=0 playing=False mode=Sc
+11:35:21 [MainThread] [DEBUG] [GUI] trim+seek scena start=0 end=84
+11:35:23 [MainThread] [TRACE] [GUI] handle_play mode=Scena resume_frame=0
+[▶ handle_play] resume_frame_index: 0
+[AUDIO] offset_frames = 0
+11:35:23 [MainThread] [DEBUG] [THREAD] New start=0 prev_alive=False
+11:35:23 [Thread-137 (playback_loop)] [DEBUG] [THREAD] Avvio playback loop
+11:35:23 [Thread-137 (playback_loop)] [TRACE] [CORE] play_with_cache start_index=0 offset_frames=0 fps=25
+[AUDIO DEBUG] offset_frames: 0, start_sec: 0.00
+11:35:23 [Thread-137 (playback_loop)] [DEBUG] [CORE] seek request target=503
+11:35:23 [Thread-137 (playback_loop)] [DEBUG] [CORE] loop ended reason=fine video last_frame=84
